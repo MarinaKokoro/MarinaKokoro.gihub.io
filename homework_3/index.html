@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>web3 - Kokorovets Marina</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="">Ссылка_1</a> 
+        <a href="">Ссылка_2</a> 
+        <a href="">Ссылка_3</a> 
+      </nav>
+      <div id="head">
+        <img src="logo-blue.png" id="logo" alt="logo">
+        <p id="name-of-site">Задание 3</p>
+      </div>
+      
+
+    </header>
+    
+    <div class="content">
+      
+      <div class="block" id="links">
+        <h3>Маркированный список</h3>
+        <ul>
+        <li><a href="http://www.kubsu.ru/ru">Сайт КубГУ</a></li>
+        <li><a href="https://www.kubsu.ru/ru">Сайт КубГУ</a></li>
+
+        <li><a href="https://www.kubsu.ru/ru" id="image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEaCl6rXn8CujA3kND5cLNEt1r3VsTeT4hQA&s" 
+          style="width: 100px;" alt="лого-кубгу"/>
+        </a></li>
+
+        <li><a href="/blog/page.html">Внутренняя страница</a></li>
+        <li><a href="/index.html">Главная страница</a></li>
+
+        <li><a href="#image">Ссылка на фрагмент страницы</a></li>
+        <li><a href="https://www.kubsu.ru?param1=value&param2=value&param3=value"> C тремя параметрами в URL</a></li>
+        <li><a href="https://www.kubsu.ru?id=1234567"> C параметром id в URL</a></li>
+        <li><a href="page1.html"> Относительная на страницу в текущем каталоге</a></li>
+        <li><a href="/about/about.html"> Относительная на страницу в каталоге about</a></li>
+
+        <li><a href="../page2.html"> Относительная на страницу в каталоге уровнем выше текущего</a></li>
+        <li><a href="../../page3.html"> Относительная на страницу в каталоге двумя уровнями выше</a></li>
+        <li>
+          <p>Здесь какой-нибудь текст, а это <a href="https://www.kubsu.ru">контекстная ссылка</a> в тексте абзаца</p>
+        </li>
+        <li><a href="https://www.kubsu.ru/index.php#zone-content-wrapper"> Ссылка на фрагмент страницы стороннего сайта</a></li>
+
+        <li>
+          Ссылки из прямоугольных и круглых областей картинки (HTML-тег map):
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwSKSkMC3SE43cHZx8V7G7q1saTfJonMQfnA&s" 
+            style="display:block;" width="200" alt="Кубик" usemap="#square">
+          <p><map id="square" name="square">
+              <area shape="rect" coords="0,0,40,100" href="https://www.kubsu.ru" alt="Главная">
+              <area shape="circle" coords="100,50,50" href="https://www.kubsu.ru/ru/sveden" alt="Сведения">
+          </map></p>
+        </li>
+
+        <li><a href=""> Ссылка с пустым href</a></li>
+        <li><a> Ссылка без href</a></li>
+        <li><a href=“http://www.kubsu.ru/ru” rel=“nofollow”> Ссылка, по которой запрещен переход поисковикам</a></li>
+        <li><!--<noindex>--><a href="page1.html"> Ссылка запрещенная для индексации поисковиками</a><!--</noindex>--></li>
+
+        <li>
+          <ol>
+            <li><a href="https://www.kubsu.ru" title="Главная страница кубгу">Ссылка</a></li>
+            <li><a href="https://www.kubsu.ru/ru/sveden" title="Сведения о кубгу">Ссылка</a></li>       
+          </ol>
+        </li>
+
+        <li><a href="ftp://login123:password123@index.ru/file.txt"> Ссылка на файл на сервере FTP с авторизацией</a></li>
+        </ul>
+      </div>
+
+      <div class="block" id="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Тип данных</th>
+              <th>Размер, байт</th>
+              <th colspan="2">Диапазон значений</th>
+            </tr>
+          </thead>
+
+          <tr class="cht">
+            <td>char</td>
+            <td>1</td>
+            <td>-128</td>
+            <td>127</td>
+          </tr>
+
+          <tr>
+            <td>short</td>
+            <td>2</td>
+            <td>-32768</td>
+            <td>32767</td>
+          </tr>
+
+          <tr class="cht">
+            <td>int</td>
+            <td>4</td>
+            <td>-2147483648</td>
+            <td>2147483647</td>
+          </tr>
+          
+          <tr>
+            <td>long</td>
+            <td>4</td>
+            <td>-2147483648</td>
+            <td>2147483647</td>
+          </tr>
+
+          <tr class="cht">
+            <td>long long</td>
+            <td>8</td>
+            <td>-9223372036854775808</td>
+            <td>9223372036854775807</td>
+          </tr>
+
+          <tr>
+            <td colspan="4">Вот такие типы данных</td>
+          </tr>
+
+        </table>
+      </div>
+
+      <div class="block" id="form">
+        <h3>Пример формы HTML</h3>
+        <form action="/" method="POST">
+
+        <label>
+          <input type="text" placeholder="Введите ФИО" />
+        </label><br />
+
+        <label>
+          <input type="tel" placeholder="Введите ваш номер телефона" />
+        </label><br />
+
+        <label>
+          <input type="email" placeholder="Введите ваш email" />
+        </label><br />
+
+        <label>
+          Дата рождения:<br />
+          <input type="date" />
+        </label><br />
+
+        Пол:<br />
+        <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1" />Женский</label>
+        <label><input type="radio" name="radio-group-1" value="Значение2" />Мужской</label><br />
+
+        <label>
+          Любимый язык программирования:
+          <br />
+          <select name="field-name-4[]"
+            multiple="multiple">
+            <option value="Значение1">Pascal</option>
+            <option value="Значение2">C</option>
+            <option value="Значение3">JavaScript</option>
+            <option value="Значение4">C++</option>
+            <option value="Значение5">PHP</option>
+            <option value="Значение6">Python</option>
+            <option value="Значение7">Java</option>
+            <option value="Значение8">Haskel</option>
+            <option value="Значение9">Clojure</option>
+            <option value="Значение10">Prolog</option>
+            <option value="Значение10">Scala</option>
+          </select>
+        </label><br />
+
+        <label>
+          Биография:<br />
+          <textarea></textarea>
+        </label><br />
+
+        <label><input type="checkbox" checked="checked" />С контрактом ознакомлен(а)</label><br />
+
+        <input type="submit" value="Отправить" />
+        </form>
+      </div>
+    </div>
+  
+    <footer>
+      (с) Кокоровец Марина 2024
+    </footer>
+  </body>
+
+</html>
+ 
