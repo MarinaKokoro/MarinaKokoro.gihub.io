@@ -1,0 +1,60 @@
+#body{
+    background-color: #eaeaea;
+    background-color: #acbfd3;
+    background-color: #7a98b8;
+    background-color:#5D5E6F;
+    background-color:#AEBD38;
+    background-color: #acbfd3;
+}
+
+header, footer{
+    background-color:#5D5E6F;
+    color:#eaeaea;
+}
+
+#logo{
+    max-width: 100px;
+    height: 75px;
+    margin: 10px;
+}
+#table{
+    overflow: scroll;
+}
+#nav{
+    background-color:#AEBD38;
+}
+nav a{
+    color:#545d0e;
+    margin: 10px;
+}
+#name-of-site{
+    color:#eaeaea;
+    font-size:25px;
+    font-family:sans-serif;
+    text-align: center;
+}
+
+
+/* КОНТЕНТ */
+.out{
+    background-color: #7a98b8;
+}
+.in{
+    background-color: #eaeaea;
+}
+
+/* ТАБЛИЦА */
+table, th, td{
+    border-collapse: collapse;
+    border:2px solid #3f3f3f;
+}
+table{
+    margin: auto;
+}
+td, th {
+    padding: 10px 20px;
+    text-align: center;
+}
+.cht{
+    background-color: #dddddd;
+}
