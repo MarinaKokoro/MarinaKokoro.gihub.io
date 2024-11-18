@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
+    <script src="script.js" defer></script> 
+    <link rel="stylesheet" href="style.css"> 
+    <title>Форма обратной связи</title> 
+</head> 
+<body> 
+ 
+<button id="open-popup">Открыть форму обратной связи</button> 
+ 
+<div id="popup" class="popup"> 
+    <div id="form-container"> 
+        <h2>Обратная связь</h2> 
+        <form id="feedback-form" class="formcarryForm" action="https://formcarry.com/s/_3sdp1X6O-p" enctype="multipart/form-data"> 
+            <input type="text" name="field-fio" placeholder="ФИО" required> 
+            <input type="email" name="field-email" placeholder="Email" required> 
+            <input type="tel" name="field-number" placeholder="Телефон" required> 
+            <input type="text" name="field-org" placeholder="Организация" required> 
+            <textarea name="field-message" placeholder="Сообщение" required></textarea> 
+            <label> 
+                <input type="checkbox" id="consent" required> Согласен с обработкой персональных данных 
+            </label> 
+            <button type="submit">Отправить</button> 
+            <button type="button" id="close-popup">Закрыть</button> 
+        </form> 
+        <div id="response-message"></div> 
+    </div> 
+</div> 
+ 
+</body> 
+</html>
